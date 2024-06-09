@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'font1' ;
+    src: url(FontTulisan/font1.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'font2' ;
+    src: url(FontTulisan/KBCloudyDay.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'font3' ;
+    src: url(FontTulisan/PinkChicken-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'font4';
+    src: url(FontTulisan/Acero\ y\ Sangre.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'font5';
+    src: url(FontTulisan/Comic\ Book\ Bold.otf) format('opentype');
+}
+
+body{
+    overflow-x: hidden;
+    background-image: url("tamako.png"), url("tomorifix.png");
+    background-size: 19%, 22%;
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+    background-attachment: fixed;
+    background-position-y: bottom;
+}
+
+.logo{
+    font-family: comic sans ms;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    margin-left: 40px;
+}
+
+.search input[type=text]{
+  padding: 7px;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+.search button{
+  padding: 7px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  color: white;
+  background: #006400;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.search button:hover {
+  background: #ccc;
+} 
+
+nav{
+    font-family: tahoma;
+    font-weight: bold;
+    display: flex;
+    background-color: #000;
+    color: sandybrown;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+    font-size: 18px;
+    top: 0;
+    border-bottom: 2px solid steelblue;
+    z-index: 1;
+
+}
+
+nav ul{
+    display: flex;
+    background: none;
+    list-style: none;
+    width: 35%;
+    justify-content: space-between;
+    padding: 50px;
+    font-family: 'font1';
+} 
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 230, 4);
+    padding: 20px;
+    
+
+}
+nav ul li a:hover{
+    display: block;
+    color: yellow;
+    background: #222;
+    box-shadow: inset 0px 0px 50px #000;
+    padding-right: 20px;
+}
+
+nav ul li .dropdown{
+    display: none;
+}
+
+nav ul li:hover .dropdown{
+    display: block ;
+    background: black;
+    position: absolute;
+    padding: 5px;
+    width: 100px;
+    margin-right: px;
+  
+}
+
+nav ul li:hover .dropdown li {
+  display: block;
+}
+nav ul li:hover .dropdown li a {
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+nav ul li:hover .dropdown li a:hover {
+  background: #222;
+  box-shadow: inset 0px 0px 3px #000
+}
+
+.kontenkeseluruhan{
+    background-color: beige ;
+    width: 1140px; ;
+    margin: 0 auto;
+}
+
+.banner{
+    padding: 10px;
+}
+
+.banner img{
+    height: 600px;
+    width: 1119px;
+}
+
+.banner h3{
+    margin: 10px;
+}
+
+.Judulanime{
+    width: 1100px;
+    margin: auto;
+    background-color: blanchedalmond;
+    color: black;
+    padding: 10px;
+    font-family: 'font3';
+    font-size: 25px;
+
+}
+
+.kontenanime{
+    margin: 0 auto;;
+    width: 1139px;
+    
+}
+
+.isitabel{
+    color: white;
+    background-color:beige;
+    margin: 10px;
+    font-family: 'font2';
+    border: ghostwhite;
+    padding: 10px;
+}
+.jaraktabel{
+    padding: 10px;
+    margin: 100px; 
+    border-radius: 10px;
+    background-color: #625E5E;
+}
+
+.sinopsis{
+    width: 1120px;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: beige ;
+}
+
+.sinopsis p{
+    padding: 3px;
+}
+
+.sinopsis h2{
+    font-family: 'font3';
+    padding-bottom: 10px;
+}
+
+.pv{
+    width: 1139px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.komenbox{
+    width: 1000px;
+    margin: 200px 0 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%,-50%);
+    position: relative;
+}
+
+.komenbox h2{
+    font-size: 20px;
+    font-family:'font1' ;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.komenbox input{
+    width: 70%;
+    height: 50%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: turquoise;
+    margin-left: 10px;
+}
+
+.komenbox input:focus{
+    border: 1px solid pink;
+    outline: 0;
+
+}
+
+.komenbox textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-color: turquoise;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.komenbox textarea:focus{
+    border: 1px solid pink;
+    outline: 0;
+
+}
+
+.komenbox button{
+    border: 0;
+    padding: 10px 30px;
+    background-color: rgb(86, 255, 8);
+    border-radius: 7px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'font5';
+    transition: 0.5s ease-out;
+}
+
+.komenbox button:hover{
+    background-color: tomato;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    color: white;
+}
+
+.rekomendasinonton{
+    width: 1139px;
+    padding: 10px 0 70px 10px;
+    margin: 10px 10px 70px 10px;
+}
+
+.rekomendasinonton p{
+    padding: 10px;
+    font-size: 20px;
+    background-color: powderblue;
+    width: 1080px;
+    
+}
+
+.rekomendasinonton p a{
+    text-decoration: none;
+    color: black;
+}
+
+.rekomendasinonton h2{
+    background-color: black;
+    padding: 10px;
+    width: 1080px;
+    font-family: 'font3';
+    color: white;
+}
+
+.rekomendasinonton p a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+footer{
+    background-color: #000;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: antiquewhite;
+  }
+
+.footerisi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footerisi h1{
+  font-family: 'font3';
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 10px;
+  color: blueviolet;
+  padding: 20px;
+}
+
+.footerisi p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 30px;
+  font-size: 20px;
+}
+
